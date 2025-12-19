@@ -23,10 +23,10 @@ export const projects: Project[] = [
     shortDescription: 'A simple message decoder that shifts letters back and forth.',
     image: '/images/project1.jpg',
     technologies: ['Java', 'VI', 'Git'],
-    overview: 'The encryptor and decrypter program is for simple messages. Anyone can easily disguise a message and send it to a person with the existing code. So long as the person receiving the message knows the phase direction, the message can be decrypted using the same program. This project was developed as part of my ICS coursework at UH Manoa.',
+    overview: 'The encryptor and decrypter program is for simple messages. Anyone can easily disguise a message and send it to a person with the existing code. So long as the person receiving the message knows the phrase direction, the message can be decrypted using the same program. This project was developed as part of my ICS coursework at UH Manoa.',
     myRole: [
       'Designing the encrypter and decrypter',
-      'Implementing the user message phase',
+      'Implementing the user message phrase',
       'Creating the basic UI',
       'Testing and debugging the program'
     ],
