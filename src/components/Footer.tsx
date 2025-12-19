@@ -12,6 +12,9 @@ const Footer: React.FC = () => (
             <a href="https://github.com/ndv0gel" className="me-3 text-white text-decoration-none" style={{ opacity: 0.9 }}>
               GitHub
             </a>
+            <a href="https://www.linkedin.com/in/nathan-d-vogel" className="me-3 text-white text-decoration-none" style={{ opacity: 0.9 }}>
+              LinkedIn
+            </a>
             <a href="https://www.instagram.com/oxyclean07" className="me-3 text-white text-decoration-none" style={{ opacity: 0.9 }}>
               Instagram
             </a>

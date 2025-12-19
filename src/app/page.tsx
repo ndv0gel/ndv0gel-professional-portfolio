@@ -64,6 +64,15 @@ export default function Home() {
                   <i className="fab fa-github"></i>
                 </a>
                 <a
+                  href="https://www.linkedin.com/in/nathan-d-vogel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none"
+                  aria-label="LinkedIn"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a
                   href="https://www.instagram.com/oxyclean07"
                   target="_blank"
                   rel="noopener noreferrer"
