@@ -11,10 +11,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Nathan Vogel - Professional Portfolio',
-  description: 'ICS student at University of Hawaii at Manoa. Software engineering projects and technical writing.',
   openGraph: {
     title: 'Nathan Vogel - Professional Portfolio',
-    description: 'ICS student at University of Hawaii at Manoa. Software engineering projects and technical writing.',
     url: 'https://nathan-vogel.vercel.app',
     siteName: 'Nathan Vogel Portfolio',
     images: [
@@ -29,7 +27,6 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Nathan Vogel - Professional Portfolio',
-    description: 'ICS student at University of Hawaii at Manoa',
   },
 };
 
