@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflecting on Software Engineering - Nathan Vogel</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#essays">Essays</a></li>
+        <li><a href="../index.html#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="essay-detail">
+    <article>
+      <h1>Reflecting on Software Engineering</h1>
+      <div class="essay-content">
+        <p>
+          Going into ICS 314, it would have been easy to assume the course was mainly “how to build a web app.”
+          Web development was definitely a major outcome, but the bigger takeaway for me is that software engineering
+          is really about building systems in a way that stays understandable, repeatable, and maintainable even when
+          the project grows or the team changes. The tools and frameworks we used were just the beginning. Configuration 
+          management, coding standards, and user interface frameworks apply to almost any software project, even ones 
+          that have nothing to do with the web.
+        </p>
+
+        <p>
+          Configuration management is one of the most important ideas I learned because it solves a problem that shows
+          up everywhere. Keeping a project's “state” consistent over time and across people. Configuration management
+          is the practice of controlling and tracking changes to a software system so you can reliably answer questions
+          like “What changed?”, “Who changed it?”, “Why was it changed?”, and “How do we get back to a known working
+          version?” In this class, GitHub was the main tool used to implement configuration management. The concept is 
+          bigger than version control. It also includes managing dependencies, documenting how to build and run the 
+          project, and making sure the same code can be reproduced in different environments.
+        </p>
+
+        <p>
+          Outside of web development, configuration management becomes even more critical. For example, a robotics team
+          working on embedded code, a data science group training models, or a game studio building a multi-platform
+          release. All of these things need a reliable history of changes and a way to coordinate work without overwriting 
+          each other. The ability to use branches for isolated development, pull requests for review, and tagged releases
+          for stable milestones is not “web-specific” it is a general method for reducing chaos. What I value most
+          about learning configuration management is that it turns software work into something you can audit and
+          reproduce instead of something that only works “on my machine.”
+        </p>
+
+        <p>
+          Coding standards were another major shift in how I think about software engineering. A coding standard is a
+          set of agreed upon rules and conventions that make code more consistent and easier to read. That can include
+          formatting (indentation, naming style), structure (how files are organized), and even behavioral expectations
+          (avoiding certain patterns that cause bugs). In this course, tools like linters help enforce standards
+          automatically. What surprised me is how much coding standards are not about being strict for no reason, they
+          are about communication. Code is read far more often than it is written, and standards make that reading faster.
+        </p>
+
+        <p>
+          In non-web contexts, coding standards matter just as much, if not more. In a backend service, inconsistent
+          error-handling or unclear naming can create subtle production issues that are hard to trace. In safety-critical
+          systems, like medical devices, standards can be the difference between a reviewable system and one that hides 
+          mistakes. Even on solo projects, standards help future you, because it is much easier to return to a clean 
+          codebase than a messy one. The biggest lesson I learned is that “working” code is not the finish
+          line, maintainable code is.
+        </p>
+
+        <p>
+          User interface frameworks were the third topic that felt like “web stuff” at first, but ended up teaching
+          broader engineering ideas. A user interface (UI) framework is a reusable set of components, layout tools,
+          and design conventions that help developers build consistent interfaces efficiently. Frameworks like Bootstrap
+          provide ready-to-go styling and responsive layouts, while component based approaches (like React) encourage
+          organizing UI into small pieces with clear responsibilities. The deep lesson here is standardization and reuse, 
+          instead of reinventing basic elements. Frameworks provide proven building blocks so developers can focus on
+          the unique logic of the product.
+        </p>
+
+        <p>
+          Beyond web development, the “framework” mindset still applies. Desktop apps as well as mobile applications use UI 
+          frameworks mobile applications. Even command line tools have interface conventions and patterns that work like a 
+          framework. They have consistent flags, predictable outputs, and a standard help menu. More importantly, UI 
+          frameworks taught me the importance of designing for users and designing for change. A UI is not just appearance, 
+          it is a contract between the system and the person using it. When a system grows, a framework helps prevent the 
+          interface from becoming inconsistent and confusing, because it encourages repeated patterns and shared components.
+        </p>
+
+        <p>
+          What ties these three topics together is that they all support professional scale software. Configuration
+          management protects the project's history and makes collaboration safe. Coding standards make the codebase
+          readable and reduce avoidable bugs. UI frameworks reduce reinvention and encourage consistency and reuse.
+          None of these depend on whether you are building a website, a mobile app, a game, or a backend service. They
+          are transferable habits that make software engineering feel less like improvisation and more like a disciplined
+          craft.
+        </p>
+
+        <p>
+          If I had to summarize what I learned in one sentence, it would be this: Software engineering is the set of
+          practices that makes software reliable for people other than the person currently typing. ICS 314 helped me
+          build more than web pages, it helped me build a workflow and mindset that I can apply to almost any project 
+          I work on in the future.
+        </p>
+      </div>
+
+      <p class="essay-date">December 2025</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nathan Vogel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
