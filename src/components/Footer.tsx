@@ -1,18 +1,26 @@
-import { Col, Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
-/** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
-const Footer = () => (
-  <footer className="mt-auto py-3 bg-light">
+const Footer: React.FC = () => (
+  <footer className="py-4 mt-5" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
     <Container>
-      <Col className="text-center">
-        Department of Information and Computer Sciences
-        <br />
-        University of Hawaii
-        <br />
-        Honolulu, HI 96822
-        <br />
-        <a href="http://ics-software-engineering.github.io/nextjs-application-template">Template Home Page</a>
-      </Col>
+      <Row>
+        <Col md={6}>
+          <p className="mb-0">&copy; 2025 Nathan Vogel. All rights reserved.</p>
+        </Col>
+        <Col md={6} className="text-md-end">
+          <p className="mb-0">
+            <a href="https://github.com/ndv0gel" className="me-3 text-white text-decoration-none" style={{ opacity: 0.9 }}>
+              GitHub
+            </a>
+            <a href="https://www.instagram.com/oxyclean07" className="me-3 text-white text-decoration-none" style={{ opacity: 0.9 }}>
+              Instagram
+            </a>
+            <a href="mailto:nvogel@hawaii.edu" className="text-white text-decoration-none" style={{ opacity: 0.9 }}>
+              Email
+            </a>
+          </p>
+        </Col>
+      </Row>
     </Container>
   </footer>
 );
