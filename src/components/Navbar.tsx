@@ -10,12 +10,14 @@ const NavBar: React.FC = () => {
   const isActive = (path: string) => pathname === path || pathname.startsWith(path);
 
   return (
-    <Navbar bg="light" sticky="top">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/" className="fw-bold">
           Nathan Vogel
         </Navbar.Brand>
-        <Nav className="ms-auto d-flex flex-row">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto d-flex flex-row flex-wrap gap-2">
             <Nav.Link href="/" active={pathname === '/'}>
               Home
             </Nav.Link>
@@ -28,7 +30,8 @@ const NavBar: React.FC = () => {
             <Nav.Link href="/resume" active={isActive('/resume')}>
               Resume
             </Nav.Link>
-        </Nav>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
