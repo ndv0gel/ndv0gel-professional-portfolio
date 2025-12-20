@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Nathan Vogel Portfolio',
     images: [
       {
-        url: '/images/profile.jpg',
+        url: '/images/profile-v2.jpg',
         width: 200,
         height: 200,
       },
