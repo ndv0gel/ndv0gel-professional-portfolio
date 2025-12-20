@@ -8,7 +8,6 @@ import EssayCard from '@/components/EssayCard';
 
 export const metadata = {
   title: 'Nathan Vogel - Professional Portfolio',
-  description: 'ICS Student at University of Hawaii at Manoa | Expected Graduation: May 2026',
 };
 
 export default function Home() {
