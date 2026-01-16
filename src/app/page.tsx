@@ -39,7 +39,7 @@ export default function Home() {
               </div>
               <h1 className="display-4 fw-bold mb-3">Nathan Vogel</h1>
               <p className="lead mb-4">
-                ICS Student at University of Hawaii at Manoa | Expected Graduation: May 2026
+                ICS Student at University of Hawaii at Manoa | Expected Graduation: December 2026
               </p>
 
               {/* Interests */}
