@@ -159,7 +159,7 @@ export default function Home() {
 
               <div className="experience-card">
                 <h3 className="fw-bold mb-2">Lead Lifeguard</h3>
-                <p className="fw-semibold text-muted mb-1">City of Oceanside</p>
+                <p className="fw-semibold text-muted mb-1">City of Temecula</p>
                 <p className="text-muted mb-3">May 2021 - Present</p>
                 <ul className="list-unstyled">
                   <li className="mb-2">✓ Maintained First Aid and CPR proficiency to provide optimal support to individuals in distress</li>

@@ -165,7 +165,7 @@ export default function ResumePage() {
               <div className="resume-card h-100">
                 <p className="resume-overline mb-1">Education</p>
                 <h2 className="h4 mb-3">University of Hawaii at Manoa</h2>
-                <p className="text-muted mb-2">B.S. in Computer Science • Expected May 2026</p>
+                <p className="text-muted mb-2">B.S. in Computer Science • Expected December 2026</p>
                 <p className="mb-3">Relevant coursework: Software Engineering, Data Structures & Algorithms, Web Development, Database Systems.</p>
                 <div className="d-flex flex-wrap gap-2">
                   {['Dean’s list', 'Team projects', 'Technical writing'].map((item) => (
