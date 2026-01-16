@@ -27,9 +27,6 @@ const NavBar: React.FC = () => {
             <Nav.Link href="/essays" active={isActive('/essays')}>
               Essays
             </Nav.Link>
-            <Nav.Link href="/resume" active={isActive('/resume')}>
-              Resume
-            </Nav.Link>
             <a
               href="/resume/Nathan-Vogel-Resume.pdf"
               download
