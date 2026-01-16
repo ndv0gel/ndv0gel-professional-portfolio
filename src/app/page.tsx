@@ -162,9 +162,10 @@ export default function Home() {
                 <p className="fw-semibold text-muted mb-1">City of Oceanside</p>
                 <p className="text-muted mb-3">May 2021 - Present</p>
                 <ul className="list-unstyled">
-                  <li className="mb-2">✓ Monitored crowded beaches and responded to emergencies to keep visitors safe</li>
-                  <li className="mb-2">✓ Communicated clearly under pressure with teams, first responders, and the public</li>
-                  <li>✓ Trained regularly to maintain readiness, CPR proficiency, and strong swimming ability</li>
+                  <li className="mb-2">✓ Maintained First Aid and CPR proficiency to provide optimal support to individuals in distress</li>
+                  <li className="mb-2">✓ Observed recreational users to detect safety concerns and prevent ongoing violations</li>
+                  <li className="mb-2">✓ Performed pool tests, recorded results, and adjusted chemical levels to meet safety standards</li>
+                  <li>✓ Trained and managed team of lifeguards on pool safety and risk management protocols</li>
                 </ul>
               </div>
             </Col>
