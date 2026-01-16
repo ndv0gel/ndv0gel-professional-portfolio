@@ -190,7 +190,6 @@ export default function ResumePage() {
                     Email Me
                   </Link>
                 </div>
-                <p className="text-muted small mt-3 mb-0">Place your exported resume at public/resume/Nathan-Vogel-Resume.pdf to keep this link fresh.</p>
               </div>
             </Col>
           </Row>
