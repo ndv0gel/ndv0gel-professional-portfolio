@@ -29,7 +29,7 @@ export default function Home() {
             <Col md={8} className="mt-5 text-center">
               <div className="mb-4 profile-image-container" style={{ width: '200px', height: '200px', margin: '0 auto', borderRadius: '50%', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Image
-                  src="/images/profile-v2.jpg"
+                  src="/images/profile.jpg"
                   alt="Nathan Vogel"
                   width={200}
                   height={200}
