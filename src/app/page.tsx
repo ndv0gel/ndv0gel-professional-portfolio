@@ -11,6 +11,7 @@ export const metadata = {
 };
 
 export default function Home() {
+  const featuredProjects = projects.filter((p) => p.slug !== 'java-encryption-decryption');
   // Select 4 best essays: required software engineering + 3 others
   const bestEssays = [
     essays[0], // Software Engineering Journey (required)
@@ -98,7 +99,7 @@ export default function Home() {
         <Container>
           <h2 className="text-center display-5 fw-bold mb-5">Featured Projects</h2>
           <Row className="g-4 mb-4">
-            {projects.map((project) => (
+            {featuredProjects.map((project) => (
               <Col key={project.id} md={6} lg={4}>
                 <ProjectCard project={project} />
               </Col>
@@ -157,13 +158,13 @@ export default function Home() {
               </div>
 
               <div className="experience-card">
-                <h3 className="fw-bold mb-2">Nursery Worker</h3>
-                <p className="fw-semibold text-muted mb-1">Durling Nursery</p>
-                <p className="text-muted mb-3">May 2017 - Present</p>
+                <h3 className="fw-bold mb-2">Lead Lifeguard</h3>
+                <p className="fw-semibold text-muted mb-1">City of Oceanside</p>
+                <p className="text-muted mb-3">May 2021 - Present</p>
                 <ul className="list-unstyled">
-                  <li className="mb-2">✓ Planted overgrown trees into larger buckets</li>
-                  <li className="mb-2">✓ Maintained consistent tree delivery times</li>
-                  <li>✓ Provided support to others by weeding 8hr a day</li>
+                  <li className="mb-2">✓ Monitored crowded beaches and responded to emergencies to keep visitors safe</li>
+                  <li className="mb-2">✓ Communicated clearly under pressure with teams, first responders, and the public</li>
+                  <li>✓ Trained regularly to maintain readiness, CPR proficiency, and strong swimming ability</li>
                 </ul>
               </div>
             </Col>

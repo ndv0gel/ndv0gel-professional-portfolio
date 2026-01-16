@@ -4,6 +4,11 @@ body {
   --cream-color: #fff8f1;
   --primary-purple: #667eea;
   --secondary-purple: #764ba2;
+  --ink: #0b1b36;
+  --ink-soft: #1f2a44;
+  --sand: #f7f4ed;
+  --accent: #f59e0b;
+  --muted: #6b7280;
   box-sizing: border-box;
   height: 100%;
   padding: 0;
@@ -191,6 +196,123 @@ body {
 .navbar {
   background: white !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume Page */
+.resume-hero {
+  background: radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.25) 0, rgba(245, 158, 11, 0) 40%),
+    linear-gradient(135deg, #0b1b36 0%, #312e81 55%, #4c1d95 100%);
+  color: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-hero::after {
+  content: '';
+  position: absolute;
+  inset: 20% -10% -40% auto;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08), transparent 60%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.resume-overline {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.resume-stats {
+  color: #e5e7eb;
+}
+
+.resume-stat {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  min-width: 180px;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(229, 231, 235, 0.8);
+}
+
+.resume-body {
+  background: var(--sand);
+}
+
+.resume-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1.75rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.resume-card h2 {
+  color: var(--ink);
+}
+
+.resume-list {
+  padding-left: 1.25rem;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.resume-entry + .resume-entry {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid #e5e7eb;
+}
+
+.pill-ghost {
+  background: #fff;
+  color: var(--ink);
+}
+
+.resume-download {
+  background: #f8fafc;
+  color: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.18);
+}
+
+.resume-download:active {
+  transform: translateY(0);
 }
 
 .navbar-brand {

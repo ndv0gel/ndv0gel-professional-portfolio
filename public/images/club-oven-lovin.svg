@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title>Club Oven Lovin Placeholder</title>
+  <desc>Abstract card placeholder for the Club Oven Lovin project.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1b36" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)" rx="18" />
+  <rect x="48" y="72" width="544" height="216" rx="16" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" />
+  <rect x="70" y="94" width="180" height="140" rx="12" fill="rgba(255,255,255,0.18)" />
+  <rect x="276" y="106" width="290" height="14" rx="7" fill="rgba(255,255,255,0.9)" />
+  <rect x="276" y="134" width="260" height="12" rx="6" fill="rgba(255,255,255,0.8)" />
+  <rect x="276" y="160" width="220" height="12" rx="6" fill="rgba(255,255,255,0.7)" />
+  <rect x="276" y="188" width="200" height="12" rx="6" fill="rgba(255,255,255,0.6)" />
+  <rect x="276" y="214" width="120" height="12" rx="6" fill="#f59e0b" />
+  <circle cx="120" cy="230" r="28" fill="#f59e0b" opacity="0.9" />
+  <circle cx="172" cy="230" r="16" fill="#f8fafc" opacity="0.9" />
+</svg>
