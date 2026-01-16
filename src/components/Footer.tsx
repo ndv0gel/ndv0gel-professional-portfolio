@@ -1,12 +1,14 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-const Footer: React.FC = () => (
-  <footer className="py-4 mt-5" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
-    <Container>
-      <Row>
-        <Col md={6}>
-          <p className="mb-0">&copy; 2025 Nathan Vogel. All rights reserved.</p>
-        </Col>
+const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+  return (
+    <footer className="py-4 mt-5" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
+      <Container>
+        <Row>
+          <Col md={6}>
+            <p className="mb-0">&copy; {currentYear} Nathan Vogel. All rights reserved.</p>
+          </Col>
         <Col md={6} className="text-md-end">
           <p className="mb-0">
             <a href="https://github.com/ndv0gel" className="me-3 text-white text-decoration-none" style={{ opacity: 0.9 }}>
@@ -26,6 +28,7 @@ const Footer: React.FC = () => (
       </Row>
     </Container>
   </footer>
-);
+  );
+};
 
 export default Footer;
