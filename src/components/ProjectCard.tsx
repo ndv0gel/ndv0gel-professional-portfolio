@@ -31,13 +31,38 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
           </span>
         ))}
       </div>
-      <Link
-        href={`/projects/${project.slug}`}
-        className="btn btn-sm mt-auto"
-        style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white', border: 'none' }}
-      >
-        Learn More →
-      </Link>
+      <div className="d-flex gap-2 mt-auto">
+        {project.demoLink && (
+          <a
+            href={project.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-sm"
+            style={{ 
+              background: 'white', 
+              color: '#667eea', 
+              border: '1.5px solid #667eea',
+              fontWeight: '600',
+              flex: '0 1 auto'
+            }}
+          >
+            Demo
+          </a>
+        )}
+        <Link
+          href={`/projects/${project.slug}`}
+          className="btn btn-sm"
+          style={{ 
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
+            color: 'white', 
+            border: 'none',
+            fontWeight: '600',
+            flex: project.demoLink ? '1' : '1'
+          }}
+        >
+          Learn More →
+        </Link>
+      </div>
     </div>
   </div>
 );

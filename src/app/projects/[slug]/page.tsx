@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import { projects } from '@/data/projects';
@@ -24,6 +23,29 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
   if (!project) {
     notFound();
   }
+
+  const hasSourceLink = (() => {
+    if (!project.githubLink) return false;
+    try {
+      const u = new URL(project.githubLink);
+      if (u.hostname !== 'github.com') return true; // allow non-GitHub external links
+      const parts = u.pathname.split('/').filter(Boolean);
+      // Require at least owner/repo for GitHub links
+      return parts.length >= 2;
+    } catch {
+      return false;
+    }
+  })();
+
+  const hasDemoLink = (() => {
+    if (!project.demoLink) return false;
+    try {
+      const u = new URL(project.demoLink);
+      return u.protocol.startsWith('http');
+    } catch {
+      return false;
+    }
+  })();
 
   return (
     <main className="py-5">
@@ -72,26 +94,50 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
               </ul>
 
               <div className="text-center mt-5">
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg"
-                >
-                  View Source Code
-                </a>
+                <div className="d-flex gap-3 justify-content-center flex-wrap">
+                  {hasDemoLink && (
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-lg"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
+                        color: 'white', 
+                        border: 'none',
+                        boxShadow: '0 10px 25px rgba(102, 126, 234, 0.3)',
+                        fontWeight: '600',
+                        padding: '0.75rem 1.75rem'
+                      }}
+                    >
+                      Try Live Demo
+                    </a>
+                  )}
+                  {hasSourceLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-lg"
+                      style={{ 
+                        background: 'transparent',
+                        color: '#667eea',
+                        border: '2px solid #667eea',
+                        fontWeight: '600',
+                        padding: '0.75rem 1.75rem'
+                      }}
+                    >
+                      View on GitHub
+                    </a>
+                  )}
+                </div>
+                {!hasSourceLink && (
+                  <p className="text-muted mt-3 mb-0">Source code coming soon</p>
+                )}
               </div>
             </div>
 
-            <div className="mt-5 mb-5 position-relative rounded" style={{ width: '100%', height: 'auto', minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8f9fa' }}>
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={500}
-                height={500}
-                style={{ objectFit: 'contain', padding: '2rem', maxWidth: '100%', height: 'auto' }}
-              />
-            </div>
+            {/* Project image removed per request to keep detail pages focused on content */}
           </Col>
         </Row>
       </Container>

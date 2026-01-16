@@ -12,6 +12,7 @@ export interface Project {
   keyFeatures: string[];
   learned: string[];
   githubLink: string;
+  demoLink?: string;
 }
 
 export const projects: Project[] = [
@@ -46,7 +47,7 @@ export const projects: Project[] = [
       'End-to-end testing with Playwright',
       'Designing seed data and maintaining CI reliability'
     ],
-    githubLink: 'https://github.com/ndv0gel/club-oven-lovin'
+    githubLink: 'https://github.com/club-oven-lovin/club-oven-lovin'
   },
   {
     id: '2',
@@ -73,7 +74,8 @@ export const projects: Project[] = [
       'Form handling and validation',
       'User input management'
     ],
-    githubLink: 'https://github.com/ndv0gel'
+    githubLink: 'https://github.com/ndv0gel/windchill-calculator',
+    demoLink: 'https://ndv0gel.github.io/windchill-calculator/'
   },
   {
     id: '3',
@@ -103,7 +105,7 @@ export const projects: Project[] = [
       'Data structure design',
       'File I/O operations'
     ],
-    githubLink: 'https://github.com/ndv0gel'
+    githubLink: 'https://github.com/ndv0gel/record-editor'
   },
   {
     id: '4',
