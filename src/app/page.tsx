@@ -162,10 +162,10 @@ export default function Home() {
                 <p className="fw-semibold text-muted mb-1">City of Temecula</p>
                 <p className="text-muted mb-3">2019 - 2022</p>
                 <ul className="list-unstyled">
-                  <li className="mb-2">✓ Maintained First Aid and CPR proficiency to provide optimal support to individuals in distress</li>
+                  <li className="mb-2">✓ Managed personnel and coordinated team scheduling to ensure adequate coverage and compliance with safety protocols</li>
                   <li className="mb-2">✓ Observed recreational users to detect safety concerns and prevent ongoing violations</li>
                   <li className="mb-2">✓ Performed pool tests, recorded results, and adjusted chemical levels to meet safety standards</li>
-                  <li>✓ Managed personnel and coordinated team scheduling to ensure adequate coverage and compliance with safety protocols</li>
+                  <li>✓ Maintained First Aid and CPR proficiency to provide optimal support to individuals in distress</li>
                 </ul>
               </div>
             </Col>
