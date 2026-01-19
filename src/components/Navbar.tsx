@@ -27,22 +27,23 @@ const NavBar: React.FC = () => {
             <Nav.Link href="/essays" active={isActive('/essays')}>
               Essays
             </Nav.Link>
-            <a
-              href="/resume/Nathan-Vogel-Resume.pdf"
-              download
-              className="btn btn-sm ms-2"
-              style={{
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                color: 'white',
-                border: 'none',
-                fontWeight: '600',
-                padding: '0.4rem 1rem',
-                borderRadius: '20px',
-                boxShadow: '0 4px 12px rgba(102, 126, 234, 0.25)'
-              }}
-            >
-              <i className="fas fa-download me-2"></i>Resume
-            </a>
+            <Nav.Link href="/resume" active={isActive('/resume')} className="ms-2">
+              <span
+                className="btn btn-sm"
+                style={{
+                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  color: 'white',
+                  border: 'none',
+                  fontWeight: '600',
+                  padding: '0.4rem 1rem',
+                  borderRadius: '20px',
+                  boxShadow: '0 4px 12px rgba(102, 126, 234, 0.25)',
+                  cursor: 'pointer'
+                }}
+              >
+                <i className="fas fa-file-alt me-2"></i>Resume
+              </span>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

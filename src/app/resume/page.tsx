@@ -20,11 +20,25 @@ export default function ResumePage() {
                 Recently, I have been building project dashboards, essay experiences, and responsive layouts with a focus on accessibility and polish.
               </p>
               <div className="d-flex flex-wrap gap-3">
-                <a href={downloadUrl} className="btn resume-download" download>
-                  Download PDF
+                <a 
+                  href={downloadUrl} 
+                  className="btn btn-hero-light" 
+                  download
+                  title="Download resume as PDF"
+                >
+                  <i className="fas fa-download me-2"></i>Download PDF
                 </a>
-                <Link href="/projects" className="btn btn-outline-light text-white border-light">
-                  View Projects
+                <a 
+                  href={downloadUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn btn-hero-light"
+                  title="View resume in browser"
+                >
+                  <i className="fas fa-eye me-2"></i>View PDF
+                </a>
+                <Link href="/projects" className="btn btn-hero-light">
+                  <i className="fas fa-folder me-2"></i>View Projects
                 </Link>
               </div>
               <div className="d-flex flex-wrap gap-4 resume-stats mt-4">
@@ -183,12 +197,30 @@ export default function ResumePage() {
                 <h2 className="h4 mb-3">Want the PDF?</h2>
                 <p className="mb-4">Grab the latest copy or reach out if you need a tailored version for a specific role.</p>
                 <div className="d-flex flex-wrap gap-3">
-                  <a href={downloadUrl} className="btn resume-download" download>
-                    Download PDF
+                  <a 
+                    href={downloadUrl} 
+                    className="btn btn-gradient-primary" 
+                    download
+                    title="Download resume as PDF"
+                  >
+                    <i className="fas fa-download me-2"></i>Download PDF
                   </a>
-                  <Link href="mailto:nvogel@hawaii.edu" className="btn btn-outline-secondary">
-                    Email Me
-                  </Link>
+                  <a 
+                    href={downloadUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-primary"
+                    title="View resume in browser"
+                  >
+                    <i className="fas fa-eye me-2"></i>View PDF
+                  </a>
+                  <a 
+                    href="mailto:nvogel@hawaii.edu" 
+                    className="btn btn-rounded-secondary"
+                    title="Send me an email"
+                  >
+                    <i className="fas fa-envelope me-2"></i>Email Me
+                  </a>
                 </div>
               </div>
             </Col>

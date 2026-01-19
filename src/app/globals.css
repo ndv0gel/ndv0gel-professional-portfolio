@@ -337,6 +337,95 @@ body {
   border-bottom: 2px solid #667eea;
 }
 
+/* Button Styles */
+.btn-hero-light {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.6) !important;
+  font-weight: 600;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.btn-hero-light:hover {
+  background: rgba(107, 114, 128, 0.4) !important;
+  border-color: rgba(107, 114, 128, 0.6) !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.btn-hero-light:active {
+  transform: translateY(0);
+}
+
+.btn-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none !important;
+}
+
+.btn-gradient-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+  color: white !important;
+}
+
+.btn-gradient-primary:active {
+  transform: translateY(0);
+}
+
+.btn-rounded-secondary {
+  background: transparent !important;
+  color: var(--ink) !important;
+  border: 2px solid var(--primary-purple) !important;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.btn-rounded-secondary:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+}
+
+.btn-rounded-secondary:active {
+  transform: translateY(0);
+}
+
+.btn-outline-primary {
+  background: transparent !important;
+  color: var(--primary-purple) !important;
+  border: 2px solid var(--primary-purple) !important;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+}
+
+.btn-outline-primary:active {
+  transform: translateY(0);
+}
+
 /* Footer */
 footer {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
