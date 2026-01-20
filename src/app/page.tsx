@@ -48,7 +48,7 @@ export default function Home() {
                 <div className="interests d-flex justify-content-center gap-3 flex-wrap">
                   <span>💻 Software Development</span>
                   <span>🌐 Web Technologies</span>
-                  <span>🏄 Surfing</span>
+                  <span>🛟 Lifeguard Leadership</span>
                 </div>
               </div>
 
