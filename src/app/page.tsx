@@ -46,6 +46,7 @@ export default function Home() {
               <div className="mb-5">
                 <h2 className="h5 fw-bold mb-3">Interests</h2>
                 <div className="interests d-flex justify-content-center gap-3 flex-wrap">
+                  <span>🏄 Surfing</span>
                   <span>💻 Software Development</span>
                   <span>🌐 Web Technologies</span>
                   <span>🛟 Lifeguard Leadership</span>
