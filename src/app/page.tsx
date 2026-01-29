@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default function Home() {
-  const featuredProjects = projects.filter((p) => p.slug !== 'java-encryption-decryption');
+  const featuredProjects = projects.filter((p) => p.slug !== 'java-encryption-decryption' && p.slug !== 'record-editor');
   // Select 4 best essays: required software engineering + 3 others
   const bestEssays = [
     essays[0], // Software Engineering Journey (required)

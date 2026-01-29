@@ -12,7 +12,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   
   return (
     <div className="card h-100 card-hover border-0 shadow-sm">
-      <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: backgroundColor }}>
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: backgroundColor }}>
       <Image
         src={project.image}
         alt={project.title}
