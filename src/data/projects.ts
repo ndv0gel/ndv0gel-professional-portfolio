@@ -18,6 +18,48 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: '1',
+    slug: 'shamrocks-remake',
+    title: 'Shamrock Irish Pub & Eatery',
+    description: 'Professional restaurant website redesign with modern UI, interactive features, and full responsive design.',
+    shortDescription: 'Next.js restaurant website featuring hero sections, customer reviews carousel, interactive maps, and social media integration.',
+    image: '/images/shamrocks-remake.png',
+    technologies: ['Next.js', 'TypeScript', 'React', 'Bootstrap 5', 'CSS3', 'Vercel'],
+    overview:
+      'A complete website redesign for The Shamrock Irish Pub & Eatery in Murrieta, CA. Built with Next.js and modern web technologies, this project showcases professional restaurant web design with engaging animations, customer testimonials, and seamless user experience.',
+    myRole: [
+      'Designed and implemented full responsive layout with Bootstrap 5',
+      'Built interactive hero section with smooth scroll indicators',
+      'Integrated customer reviews carousel with Restaurant Guru badge',
+      'Implemented Google Maps integration for location display',
+      'Created reusable React components (Navbar, Footer, feature cards)',
+      'Deployed to Vercel with CI/CD pipeline'
+    ],
+    challenges:
+      'Creating an engaging, professional restaurant website that balances visual appeal with performance. Ensuring all components were accessible, responsive across devices, and maintaining clean code standards with ESLint.',
+    keyFeatures: [
+      'Dynamic hero section with call-to-action buttons',
+      'Interactive feature cards for menu, events, and reservations',
+      'Customer testimonials carousel with real reviews',
+      'Restaurant Guru 2025 recommendation badge',
+      'Embedded Google Maps for easy location finding',
+      'Social media integration (Facebook, Instagram, Twitter)',
+      'Payment options display (Venmo, Facebook Messenger)',
+      'Fully responsive design for mobile, tablet, and desktop',
+      'Back-to-top navigation button'
+    ],
+    learned: [
+      'Next.js 14 App Router and server components',
+      'Modern CSS animations and transitions',
+      'Bootstrap 5 grid system and components',
+      'Image optimization and performance best practices',
+      'ESLint configuration and code quality standards',
+      'Vercel deployment and environment configuration'
+    ],
+    githubLink: 'https://github.com/ndv0gel/shamrocks-remake',
+    demoLink: 'https://shamrocks-remake.vercel.app'
+  },
+  {
+    id: '2',
     slug: 'club-oven-lovin',
     title: 'Club Oven Lovin',
     description: 'Team-built toaster-oven recipe platform with auth, reviews, favorites, and vendor inventory tools.',
@@ -50,7 +92,7 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/club-oven-lovin/club-oven-lovin'
   },
   {
-    id: '2',
+    id: '3',
     slug: 'windchill-calculator',
     title: 'Windchill Calculator',
     description: 'A simple windchill forecast calculator. Takes in wind speed and temperature.',
@@ -78,7 +120,7 @@ export const projects: Project[] = [
     demoLink: 'https://ndv0gel.github.io/windchill-calculator/'
   },
   {
-    id: '3',
+    id: '4',
     slug: 'record-editor',
     title: 'Record Editor',
     description: 'A program that can add, delete, and find records. Written in the C Language.',
@@ -108,7 +150,7 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/ndv0gel/record-editor'
   },
   {
-    id: '4',
+    id: '5',
     slug: 'java-encryption-decryption',
     title: 'Java Encryption & Decryption',
     description: 'A simple message decoder. Shifts letters back and forth.',
