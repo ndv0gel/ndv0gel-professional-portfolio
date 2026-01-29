@@ -89,7 +89,8 @@ export const projects: Project[] = [
       'End-to-end testing with Playwright',
       'Designing seed data and maintaining CI reliability'
     ],
-    githubLink: 'https://github.com/club-oven-lovin/club-oven-lovin'
+    githubLink: 'https://github.com/club-oven-lovin/club-oven-lovin',
+    demoLink: 'https://club-oven-lovin.vercel.app'
   },
   {
     id: '3',

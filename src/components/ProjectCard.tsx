@@ -6,9 +6,13 @@ interface ProjectCardProps {
   project: Project;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
-  <div className="card h-100 card-hover border-0 shadow-sm">
-    <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8f9fa' }}>
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  // Use dark green background for shamrocks project to show white logo better
+  const backgroundColor = project.slug === 'shamrocks-remake' ? '#1a5c3a' : '#f8f9fa';
+  
+  return (
+    <div className="card h-100 card-hover border-0 shadow-sm">
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: backgroundColor }}>
       <Image
         src={project.image}
         alt={project.title}
@@ -65,6 +69,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
 export default ProjectCard;
